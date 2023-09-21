@@ -1,0 +1,58 @@
+@import url(main.css);
+@import url(colors.css);
+
+body{
+  background-image: url(/view/static/img/foto1.jpeg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+body::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+.btnInicio{
+  background-color: var(--principal-10);
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 400;
+  cursor: pointer;
+}
+.btnInicio a{
+  text-decoration: none;
+  color: inherit;
+}
+.btnInicio:hover{
+background-color: var(--secundario-20);
+}
+
+@media screen and (max-width: 768px) {
+  body{
+    background-size: cover;
+  }
+  
+}
+
+@media screen and (max-width: 480) {
+  body{
+    background-size: cover;
+  }
+  .btnInicio{
+    font-size: 16px;
+  }
+  
+}
