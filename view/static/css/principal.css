@@ -1,0 +1,127 @@
+@import url(colors.css);
+@import url(main.css);
+
+body {
+  min-height: 100hv;
+  background-color: #ffff;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+.navbar {
+  background-color: var(--principal-10);
+  height: 47px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.navbar a {
+  color: #ffff;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 auto;
+  font-family: sans-serif;
+}
+
+/* Estilo para el menú lateral */
+.sidebar {
+  width: 250px;
+  height: 100%;
+  background-color: var(--principal-10);
+  position: fixed;
+  top: 0;
+  left: -250px;
+  transition: left 0.3s ease;
+  font-family: sans-serif;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 10px;
+  text-align: center;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+  background-color: var(--secundario-20);
+}
+.openbtn {
+  background-color: var(--principal-10);
+  border: none;
+  color: #ffff;
+  padding: 10px 15px;
+  cursor: pointer;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1;
+  font-family: sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    width: 100px;
+    height: 100%;
+    background-color: var(--principal-10);
+    position: fixed;
+    top: 0;
+    left: -250px;
+    transition: left 0.3s ease;
+    font-family: sans-serif;
+  }
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .sidebar ul li {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .sidebar ul li a {
+    color: white;
+    font-size: 10px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+    font-family: sans-serif;
+  }
+  .openbtn {
+    background-color: var(--principal-10);
+    border: none;
+    color: #ffff;
+    padding: 10px 15px;
+    cursor: pointer;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+    font-family: sans-serif;
+    font-size: 10px;
+  }
+
+  .content {
+    margin-left: 250px;
+  }
+  .navbar a {
+    color: #ffff;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: right;
+    margin: 0 auto;
+    font-family: sans-serif;
+  }
+}
