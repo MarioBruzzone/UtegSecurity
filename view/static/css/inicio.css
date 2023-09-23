@@ -2,7 +2,7 @@
 @import url(colors.css);
 
 body{
-  background-image: url(/view/static/img/foto1.jpeg);
+  background-image: url(../img/foto1.jpeg);
   background-size: cover;
   background-position: center;
   height: 100vh;
