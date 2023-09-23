@@ -17,9 +17,9 @@
             <h1 class="txt-bienvenida">Bienvenidos</h1>
             <img src="/view/static/img/logo-uteg.png" alt="UTEG Logo" class="logo-uteg">
 
-            <form class="login-form" action="/public/view/home.html" method="get">
-                <input type="email" class="user" placeholder="Usuario">
-                <input type="password" name="pass" id="" class="pass" placeholder="Contraseña">
+            <form class="login-form" action="../controller/log_in.php" method="POST">
+                <input type="email" class="user" placeholder="Usuario" name="username" id="password">
+                <input type="password" name="password" id="password" class="pass" placeholder="Contraseña">
                 <button type="submit" class="btnIniciar">Iniciar Sesion</button>
                 <a href="#" class="soporte">Olvide mi contraseña</a>
             
